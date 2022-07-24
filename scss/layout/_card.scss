@@ -1,0 +1,69 @@
+.card {
+    background-color: $clr-white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 33vw;
+    height: 50vh;
+    border-radius: 1rem;
+    overflow: hidden;
+    //border: 1px solid red;;
+    &__picture {
+        width: 100%;
+        height: 100%;
+        // border: 1px solid blue;
+        background-image: url(/public/assets/images/image-product-desktop.jpg);
+        background-size: cover;
+    }
+    &__content {
+        margin: 2rem;
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-between;
+        &-type {
+            letter-spacing: 0.5rem;
+            text-transform: uppercase;
+        }
+        &-heading {
+            color: $clr-blue-dark;
+        }
+        &-description {
+            font-size: $fs-normal-plus;
+            line-height: 1.75rem;
+        }
+        &-price {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            justify-items: center;
+            &-discount {
+                color: $clr-green-dark;
+            }
+            &-retail {
+                text-decoration: line-through;
+            }
+        }
+        & .button {
+            width: 100%;
+            height: 3.5rem;
+            background-color: $clr-green-dark;
+            border-width: 0;
+            border-radius: 0.5rem;
+            // color: $clr-white;
+            // text-align: center;
+            // margin: 0 auto;
+            & i {
+                color: $clr-white;
+                padding-right: 0.75rem;
+            }
+            & .btn {
+                width: 100%;
+                height: 100%;
+                line-height: 100%;
+                text-decoration: none;
+                color: $clr-white;
+                font-size: $fs-normal-plus;
+            }
+
+        }
+    }
+}
